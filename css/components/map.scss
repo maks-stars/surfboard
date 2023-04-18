@@ -1,6 +1,8 @@
 .map {
+  height: 640px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: url("../../img/decor/map.png");
+  background: url("../../img/decor/map.png") center center no-repeat;
+  background-size: 100%;
 }

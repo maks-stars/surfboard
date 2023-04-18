@@ -601,6 +601,7 @@ footer {
 }
 
 .map {
+  height: 640px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -610,7 +611,8 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("../../img/decor/map.png");
+  background: url("../../img/decor/map.png") center center no-repeat;
+  background-size: 100%;
 }
 
 .fixed-menu {
