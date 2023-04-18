@@ -131,7 +131,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("/img/decor/hero.png") center center/cover no-repeat;
+  background: url("./img/decor/hero.png") center center/cover no-repeat;
   background-color: #292929;
   color: #fff;
   padding-bottom: rem(45px);
@@ -330,7 +330,7 @@ footer {
   position: relative;
 }
 .benefits__item:before {
-  content: url("/img/decor/shape.png");
+  content: url("./img/decor/shape.png");
   position: absolute;
   top: 30px;
   right: 0;
@@ -486,7 +486,7 @@ footer {
 }
 
 .section-form {
-  background: url("/img/decor/form-bg.png") center center/cover no-repeat;
+  background: url("./img/decor/form-bg.png") center center/cover no-repeat;
   background-color: #292929;
   color: #fff;
 }
@@ -559,7 +559,7 @@ footer {
   border-radius: 0;
 }
 .radio--checkbox:before {
-  background: url("/img/decor/checkbox.png") center center no-repeat;
+  background: url("./img/decor/checkbox.png") center center no-repeat;
 }
 
 .radio__title {
@@ -610,7 +610,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("/img/decor/map.png");
+  background: url("./img/decor/map.png");
 }
 
 .fixed-menu {
