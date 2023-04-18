@@ -7,6 +7,9 @@ $liteYellow: #FEDB3F;
 $darkGrey: #292929;
 $grey: #F2F5F4;
 
+//z-indexes
+$z-fixed-menu: 100;
+
 //normalize
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
 
@@ -24,4 +27,10 @@ $grey: #F2F5F4;
 @import "headline";
 @import "benefits";
 @import "benefit";
-@import "reviews__display";
+@import "reviews";
+@import "interactive-avatar";
+@import "form";
+@import "radio";
+@import "video";
+@import "map";
+@import "fixed-menu";
