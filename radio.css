@@ -1,0 +1,9 @@
+.radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.radio__elem {
+  display: none;
+}
