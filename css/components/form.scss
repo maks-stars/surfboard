@@ -1,3 +1,4 @@
+.container 
 .form {
   display: flex;
   }
@@ -9,8 +10,9 @@
 
   .section-form {
     background: url("../../img/decor/form-bg.png") center center / cover no-repeat;
-    background-color: $darkGrey;
+    background-size: 100%;
     color: #fff;
+    height: 100vh;
   }
 
   .form__col {

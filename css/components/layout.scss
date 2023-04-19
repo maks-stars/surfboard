@@ -73,12 +73,16 @@ img {
 }
 
 
-.container {
-	position: relative;
-	margin: 0 auto;
-	width: containerWidth;
-	height: 100%;
+.container { 
+  margin: 0 auto;
+  width: 95%;
+  height: 100%;
+  max-width: $containerWidth;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
 
 .logo,.socials,.socials__link,.menu, .menu__item,.contacts {
   display: flex;
