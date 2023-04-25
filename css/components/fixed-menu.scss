@@ -13,6 +13,9 @@
       border-color: #fff;
     }
   }
+  @include tablets {
+    display: none;
+  }
 }
 
 .fixed-menu__link {
