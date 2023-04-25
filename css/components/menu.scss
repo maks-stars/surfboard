@@ -1,0 +1,30 @@
+.menu {
+  margin: 0 rem(30px);
+  padding-top: rem(12px);
+
+  &__list {
+    display: flex;
+    align-items: center; 
+    white-space: nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  &__item {
+    margin-right: rem(22px);
+    margin-bottom: rem(10px);
+  
+    &:last-child {
+      margin-right: 0;
+    }
+  
+    &:hover {
+      color: $liteYellow;
+    }
+  }
+
+  @include tablets {
+    display: none;
+  }
+}

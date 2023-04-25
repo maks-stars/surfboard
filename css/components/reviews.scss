@@ -1,7 +1,7 @@
 .reviews__display {
   background: #F8FAF9;
-  padding: 42px 44px 34px;
-  margin: 0 78px 14px 78px;
+  padding: rem(42px) rem(44px) rem(34px);
+  margin: 0 rem(78px) rem(14px) rem(78px);
 }
 
 .reviews__display-inner {
@@ -9,9 +9,9 @@
 }
 
 .reviews__avatar {
-  width: 254px;
-  height: 260px;
-  margin-right: 40px;
+  width: rem(254px);
+  height: rem(260px);
+  margin-right: rem(40px);
 }
 
 .reviews__avatar-img {
@@ -22,22 +22,22 @@
 
 .reviews__content {
   flex: 1;
-  margin-left: 40px;
+  margin-left: rem(40px);
 }
 
 .reviews__title {
-  font-size: 30px;
+  font-size: rem(30px);
   font-weight: bold;
-  margin-bottom: 22px;
+  margin-bottom: rem(22px);
   color: #000;
 }
 
 .reviews__text {
-  margin-bottom: 24px;
+  margin-bottom: rem(24px);
 }
 
 .reviews__author {
-  font-size: 18px;
+  font-size: rem(18px);
   font-weight: bold;
   color: #000;
 }

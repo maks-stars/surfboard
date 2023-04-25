@@ -1,3 +1,23 @@
 .reviews__display {
   background: #F8FAF9;
+  padding: rem(50px) rem(44px) rem(34px);
+}
+
+.reviews__display-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews__avatar {
+  width: rem(252px);
+  height: rem(264px);
+  margin-right: rem(40px);
+}
+
+.reviews__avatar-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
 }

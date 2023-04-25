@@ -1,7 +1,12 @@
 .benefits {
   display: flex;
-  width: 940px;
-  height: 640px;
+  width: rem(940px);
+  height: rem(640px);
+
+  @include phones {
+    flex-direction: column;
+
+  }
 }
 
 .benefits__item {
@@ -9,10 +14,15 @@
   padding: 0 3%;
   position: relative;
 
+  @include phones {
+    padding: 0;
+    margin-bottom: rem(19px);
+  }
+
   &:before {
     content: url("../../img/decor/shape.png");
     position: absolute;
-    top: 30px;
+    top: rem(30px);
     right: 0;
     transform: translateX(50%);
   }
@@ -27,5 +37,12 @@
     &:before {
       display: none;
     }
+    @include phones {
+      display: none;
+    }
   }
+}
+
+.benefits-section {
+
 }

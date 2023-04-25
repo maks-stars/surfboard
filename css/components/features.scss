@@ -1,9 +1,10 @@
 .features {
   display: flex;
+  font-weight: bold;
 }
 
 .features__item {
-  margin-right: 46px;
+  margin-right: rem(46px);
 
   &:last-child {
     margin-right: 0;

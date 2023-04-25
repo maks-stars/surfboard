@@ -6,7 +6,7 @@
   color: #fff;
   padding-bottom: rem(45px);
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
 }
 
 .hero__container {
@@ -14,23 +14,43 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 30px 0 60px;
+  padding: rem(30px) 0 rem(60px);
 }
 
 .hero__main-title {
-  font-size: 48px;
+  font-size: rem(48px);
   line-height: 1.1;
   font-weight: bold;
-  margin-bottom: 38px;
+  margin-bottom: rem(38px);
   text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 .hero__title-desc {
-  font-size: 21px;
-  margin-bottom: 39px;
+  font-size: rem(21px);
+  margin-bottom: rem(39px);
   padding-right: 10%;
+
+  @include tablets {
+    padding: 0 30%;
+  }
 }
 
 .hero__title-section {
   width: 46%;
+
+  @include tablets {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.hero__icons-section {
+  @include tablets {
+    display: none;
+  }
 }

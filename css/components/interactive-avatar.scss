@@ -1,11 +1,11 @@
 .interactive-avatar {
-  height: 74px;
-  width: 74px;
-  border: 6px solid transparent;
+  height: rem(74px);
+  width: rem(74px);
+  border: rem(6px) solid transparent;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  margin-right: 6px;
+  margin-right: rem(6px);
 
   &:hover {
     border-color: $yellow;
