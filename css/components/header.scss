@@ -1,8 +1,6 @@
 .header {
   display: flex;
   color: #fff;
-  padding-top: rem(24px);
-  margin-bottom: rem(140px);
 
   @include tablets {
     background-color: #1968B1;
