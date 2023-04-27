@@ -406,6 +406,16 @@ footer {
   text-transform: uppercase;
   color: black;
 }
+@media screen and (max-width: 768px) {
+  .section__title {
+    margin-bottom: 33px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section__title {
+    margin-bottom: 26px;
+  }
+}
 
 .headline {
   text-align: center;
@@ -479,11 +489,6 @@ footer {
 }
 .benefits__item:last-child:before {
   display: none;
-}
-@media screen and (max-width: 480px) {
-  .benefits__item:last-child {
-    display: none;
-  }
 }
 
 .benefit {

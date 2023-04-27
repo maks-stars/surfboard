@@ -38,8 +38,5 @@
     &:before {
       display: none;
     }
-    @include phones {
-      display: none;
-    }
   }
 }

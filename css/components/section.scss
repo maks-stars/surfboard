@@ -13,4 +13,11 @@
   text-align: center;
   text-transform: uppercase;
   color: black;
+
+  @include tablets {
+    margin-bottom: 33px;
+}
+@include phones {
+    margin-bottom: 26px;
+}
 }
