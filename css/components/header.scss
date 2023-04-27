@@ -16,6 +16,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    padding-top: 26px;
 
       @include tablets {
         padding: 0 rem(63px) rem(21px) rem(34px);

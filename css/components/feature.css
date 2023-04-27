@@ -1,15 +1,26 @@
 .feature {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .feature__icon {
   width: 40px;
-  margin-right: 7px;
+  margin-right: 8px;
+
+  @include tablets {
+    display: none;
+}
 }
 
-.feature__text {
-  font-size: 16px;
-  max-width: 90px;
+.feature__text{
+  display: flex;
+  font-weight: bold;
+}
+
+.feature__text{
+  font-size: rem(16px);
+  max-width: rem(90px);
+
+  @include tablets {
+    display: none;
+  }
 }
