@@ -45,6 +45,10 @@
   font-weight: bold;
   margin-bottom: rem(14px);
   color: #000;
+
+  @include phones {
+    font-size: rem(26px);
+  }
 }
 
 .reviews__text {

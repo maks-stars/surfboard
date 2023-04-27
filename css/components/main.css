@@ -634,6 +634,11 @@ footer {
   margin-bottom: 0.7777777778rem;
   color: #000;
 }
+@media screen and (max-width: 480px) {
+  .reviews__title {
+    font-size: 1.4444444444rem;
+  }
+}
 
 .reviews__text {
   color: #666666;
