@@ -326,12 +326,25 @@ footer {
 
 .feature__icon {
   width: 2.2222222222rem;
-  margin-right: 0.3888888889rem;
+  margin-right: 0.4444444444rem;
+}
+@media screen and (max-width: 768px) {
+  .feature__icon {
+    display: none;
+  }
 }
 
 .feature__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 0.8888888889rem;
   max-width: 5rem;
+}
+@media screen and (max-width: 768px) {
+  .feature__text {
+    display: none;
+  }
 }
 
 .btn {
@@ -843,21 +856,6 @@ footer {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-}
-
-.map {
-  height: 35.5555555556rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background: url("../../img/decor/map.png") center center no-repeat;
-  background-size: 100%;
 }
 
 .footer {

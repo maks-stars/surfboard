@@ -4,10 +4,19 @@
 
 .feature__icon {
   width: rem(40px);
-  margin-right: rem(7px);
+  margin-right: rem(8px);
+
+  @include tablets {
+    display: none;
+}
 }
 
 .feature__text {
+  display: flex;
   font-size: rem(16px);
   max-width: rem(90px);
+
+  @include tablets {
+    display: none;
+}
 }
