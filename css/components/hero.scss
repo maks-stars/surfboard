@@ -9,6 +9,14 @@
   padding-bottom: rem(46px);
   height: 100vh;
   min-height: rem(650px);
+
+  @include tablets {
+    background: url("../../img/decor/bg-hero-tablets.png") center center / cover no-repeat;
+
+}
+@include phones {
+    background: url("../../img/decor/bg-hero-phone.png") center center / cover no-repeat;
+}
 }
 
 .hero__container {
@@ -36,7 +44,6 @@
     font-size: calc(1rem + 4vw);
     line-height: 0.9;
     margin-bottom: rem(14px);
-    // background: url('../../img/decor/bg-hero-phone.png') center center / cover no-repeat;
   }
 }
 

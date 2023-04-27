@@ -153,6 +153,16 @@ footer {
   height: 100vh;
   min-height: 36.1111111111rem;
 }
+@media screen and (max-width: 768px) {
+  .hero-img {
+    background: url("../../img/decor/bg-hero-tablets.png") center center/cover no-repeat;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero-img {
+    background: url("../../img/decor/bg-hero-phone.png") center center/cover no-repeat;
+  }
+}
 
 .hero__container {
   display: -webkit-box;
