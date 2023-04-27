@@ -19,6 +19,6 @@
   margin-bottom: 60px;
 
   @include phones {
-  font-size: 40px;
-}
+    font-size: 40px;
+  }
 }
