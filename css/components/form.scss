@@ -1,79 +1,119 @@
-.container 
-.form {
-  display: flex;
-  flex-direction: column;
 
-  @include tablets {
-    padding: 0 19%;
-  }
+
+  .section-form {
+    background: url("../../img/decor/form-bg.png") top center / cover no-repeat;
   }
 
   .form-title {
-    color: #fff;
-    margin-top: rem(60px);
+    color: white;
   }
 
-  .section-form {
-    background: url("../../img/decor/form-bg.png") center center / cover no-repeat;
-    background-size: 100%;
-    color: #fff;
-    height: 100vh;
-  }
+  .form {
+    display: flex;
 
-  .form__col {
-    flex: 1;
-    margin-right: rem(20px);
 
-    &:last-child {
-      margin-right: 0;
-    }
-
+  
     @include tablets {
-      margin-right: 0;
+      flex-direction: column;
+      padding: 0 20%;
     }
-  }
-
-  .form__row {
-    display: flex;
-    margin-bottom: rem(18px);
-  }
-
-  .form__block {
-    flex: 1;
-    margin-right: rem(20px);
-    &:last-child {
-      margin-right: 0;
+  
+    @include phones {
+      padding: 0;
     }
-  }
-
-  .form__input {
-    width: 100%;
-    border: none;
-    padding: rem(18px) rem(12px);
-    //border: solid rem(3px) #dee2bd
-    border: solid rem(3px) transparent;
-    border-radius: rem(4px);
-
-    &--textarea {
-      height: rem(168px);
-      width: rem(450px);
-      resize: none;
+  
+    &__col {
+      flex: 1;
+      margin-right: rem(41px);
+  
+      &:last-child {
+        margin-right: 0;
+      }
+  
+      @include tablets {
+        margin-right: 0;
+      }
+    }
+  
+    &__row {
+      display: flex;
       margin-bottom: rem(18px);
+  
+      @include tablets {
+        margin-bottom: rem(16px);
+      }
+    }
+  
+    &__block {
+      flex: 1;
+      margin-right: rem(20px);
+  
+      &:last-child {
+        margin-right: 0;
+      }
+  
+      &-textarea {
+        margin-bottom: rem(20px);
+  
+        @include tablets {
+          margin-bottom: 0;
+        }
+  
+        @include phones {
+          margin-bottom: rem(7px);
+        }
+      }
+    }
+  
+    &__input {
+      width: 100%;
+      border: none;
+      padding: rem(15px) rem(12px);
+      border: solid rem(3px) transparent;
       border-radius: rem(4px);
+  
+      @include tablets {
+        padding: rem(5px) rem(2px);
+      }
+  
+      &--textarea {
+        height: rem(152px);
+        resize: none;
+  
+        @include tablets {
+          height: rem(73px);
+        }
+      }
+  
+      &:focus {
+        border-color: $liteYellow;
+        outline: none;
+      }
     }
-
-    &:focus {
-      border-color: $yellow;
-      outline: none;
+  
+    &__controls {
+      display: flex;
+      padding-bottom: rem(18px);
+  
+      @include phones {
+        justify-content: center;
+      }
+  
+      &-checkbox {
+        margin-bottom: rem(27px);
+  
+        @include phones {
+          padding-right: rem(12px);
+          margin-bottom: rem(10px);
+        }
+      }
+    }
+  
+    @include tablets {
+      &__btns {
+        display: flex;
+        justify-content: center;
+      }
     }
   }
-
-  .form__controls {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .form__btns {
-    display: flex;
-    justify-content: center;
-  }
+  

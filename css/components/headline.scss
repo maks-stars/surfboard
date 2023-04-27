@@ -10,4 +10,10 @@
 .headline__subtitle {
   padding: 0 26%;
   margin-bottom: rem(48px);
+  color: #666666;
+}
+
+.container-first{
+    display: flex;
+    flex-direction: column;
 }
