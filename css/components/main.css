@@ -668,6 +668,17 @@ footer {
   .reviews__avatar {
     width: 7.2222222222rem;
     height: 7.3333333333rem;
+    margin-bottom: 32px;
+    margin-left: 40px;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews__avatar {
+    width: 7.2222222222rem;
+    height: 7.2222222222rem;
+    margin-left: 40px;
+    margin-right: 0;
   }
 }
 

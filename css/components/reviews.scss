@@ -22,7 +22,17 @@
   @include tablets {
     width: rem(130px);
     height: rem(132px);
+    margin-bottom: 32px;
+    margin-left: 40px;
+    margin-right: 0;
   }
+
+  @include phones {
+  width: rem(130px);
+  height: rem(130px);
+  margin-left: 40px;
+  margin-right: 0;
+}
 }
 
 .reviews__avatar-img {
