@@ -460,11 +460,13 @@ footer {
 @media screen and (max-width: 768px) {
   .section__title {
     margin-bottom: 33px;
+    font-size: 40px;
   }
 }
 @media screen and (max-width: 480px) {
   .section__title {
     margin-bottom: 26px;
+    font-size: 40px;
   }
 }
 

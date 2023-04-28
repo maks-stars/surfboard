@@ -16,8 +16,10 @@
 
   @include tablets {
     margin-bottom: 33px;
+    font-size: 40px;
 }
 @include phones {
     margin-bottom: 26px;
+    font-size: 40px;
 }
 }
