@@ -9,7 +9,7 @@
     }
 
     &__icon-elem {
-      width: rem(13px);
+      width: rem(14px);
       height: rem(14px);
       margin-right: rem(6px);
     }
@@ -19,12 +19,12 @@
     
       &--dark {
         font-weight: normal;
-        font-size: rem(21px);
+        font-size: rem(20px);
       }
     }
 
     @include phones {
-      margin-bottom: rem(5px);
+      margin-bottom: rem(6px);
     }
 }
 

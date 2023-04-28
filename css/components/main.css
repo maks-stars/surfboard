@@ -66,6 +66,11 @@ button {
   cursor: pointer;
 }
 
+.logo {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
 a {
   color: inherit;
   cursor: pointer;
@@ -1061,7 +1066,7 @@ footer {
       flex-shrink: 0;
 }
 .phone-number__icon-elem {
-  width: 0.7222222222rem;
+  width: 0.7777777778rem;
   height: 0.7777777778rem;
   margin-right: 0.3333333333rem;
 }
@@ -1070,11 +1075,11 @@ footer {
 }
 .phone-number__text--dark {
   font-weight: normal;
-  font-size: 1.1666666667rem;
+  font-size: 1.1111111111rem;
 }
 @media screen and (max-width: 480px) {
   .phone-number {
-    margin-bottom: 0.2777777778rem;
+    margin-bottom: 0.3333333333rem;
   }
 }
 

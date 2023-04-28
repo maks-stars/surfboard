@@ -64,6 +64,10 @@ button {
 	cursor: pointer;
 }
 
+.logo {
+	flex-shrink: 0;
+}
+
 a {
 	color: inherit;
 	cursor: pointer;
