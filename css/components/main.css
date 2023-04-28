@@ -580,12 +580,21 @@ footer {
 @media screen and (max-width: 480px) {
   .benefit__title {
     margin-bottom: 10px;
+    margin-left: 20px;
+    text-align: left;
   }
 }
 
 .benefit__desc {
   text-align: center;
   color: #666666;
+}
+@media screen and (max-width: 480px) {
+  .benefit__desc {
+    margin-bottom: 50px;
+    text-align: left;
+    margin-left: 20px;
+  }
 }
 
 .benefit__image {
@@ -594,13 +603,13 @@ footer {
 @media screen and (max-width: 480px) {
   .benefit__image {
     margin-bottom: 0;
-    margin-right: 20px;
+    margin-right: 1.1111111111rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .benefit__text {
-    margin-bottom: 51px;
+    margin-bottom: 50px;
   }
 }
 

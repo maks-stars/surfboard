@@ -40,12 +40,20 @@
 
   @include phones {
     margin-bottom: 10px;
+    margin-left: 20px;
+    text-align: left;
 }
 }
 
 .benefit__desc {
   text-align: center;
   color: #666666;
+
+  @include phones {
+    margin-bottom: 50px;
+    text-align: left;
+    margin-left: 20px;
+}
 }
 
 .benefit__image{
@@ -53,14 +61,14 @@
   
   @include phones {
       margin-bottom: 0;
-      margin-right: 20px;
+      margin-right: rem(20px);
   }
 }
 
 .benefit__text{
 
   @include phones {
-      margin-bottom: 51px;
+      margin-bottom: 50px;
   }
 
 }
