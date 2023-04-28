@@ -70,6 +70,16 @@ button {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
+@media screen and (max-width: 480px) {
+  .logo {
+    margin-top: 0.6666666667rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    margin-top: 0.6666666667rem;
+  }
+}
 
 a {
   color: inherit;
@@ -998,7 +1008,6 @@ footer {
 }
 
 .hamburger {
-  margin-left: auto;
   width: 26px;
   height: 20px;
   -webkit-box-orient: vertical;
@@ -1009,6 +1018,16 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   display: none;
+}
+@media screen and (max-width: 480px) {
+  .hamburger {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 480px) and (max-width: 768px) {
+  .hamburger {
+    margin-top: 20px;
+  }
 }
 @media screen and (max-width: 768px) {
   .hamburger {

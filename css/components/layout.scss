@@ -66,6 +66,14 @@ button {
 
 .logo {
 	flex-shrink: 0;
+
+	@include phones {
+    margin-top: rem(12px);
+}
+
+@include tablets {
+	margin-top: rem(12px);
+}
 }
 
 a {
