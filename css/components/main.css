@@ -473,8 +473,18 @@ footer {
 }
 
 .headline__title {
-  margin-bottom: 1.3888888889rem;
+  margin-bottom: 1.3333333333rem;
   margin-top: 5.8888888889rem;
+}
+@media screen and (max-width: 768px) {
+  .headline__title {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .headline__title {
+    font-size: 40px;
+  }
 }
 
 .headline__subtitle {

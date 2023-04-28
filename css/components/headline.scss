@@ -3,8 +3,16 @@
 }
 
 .headline__title {
-  margin-bottom: rem(25px);
+  margin-bottom: rem(24px);
   margin-top: rem(106px);
+
+  @include tablets {
+  font-size: 40px;
+  }
+
+  @include phones {
+    font-size: 40px;
+  }
 }
 
 .headline__subtitle {
