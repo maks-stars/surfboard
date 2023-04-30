@@ -19,6 +19,16 @@
   padding: 0 26%;
   margin-bottom: rem(48px);
   color: #666666;
+
+  @include tablets {
+    padding-bottom: 49px;
+}
+
+@include phones {
+    padding: 0;
+    margin-bottom: 53px;
+    color: black;
+}
 }
 
 .container-first{

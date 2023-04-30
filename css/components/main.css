@@ -494,6 +494,18 @@ footer {
   margin-bottom: 2.6666666667rem;
   color: #666666;
 }
+@media screen and (max-width: 768px) {
+  .headline__subtitle {
+    padding-bottom: 49px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .headline__subtitle {
+    padding: 0;
+    margin-bottom: 53px;
+    color: black;
+  }
+}
 
 .container-first {
   display: -webkit-box;
