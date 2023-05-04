@@ -26,6 +26,16 @@ body {
 	;
 }
 
+.logo {
+  flex-shrink: 0;
+
+  &__img {
+    width: rem(56px);
+    height: rem(40px);
+		color: white;
+  }
+}
+
 button {
 	border: 0;
 	cursor: pointer;
