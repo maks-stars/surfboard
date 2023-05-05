@@ -5,11 +5,13 @@
 }
 
 .products__container {
-  max-width: rem(949px);
+  max-width: rem(948px);
 }
 
 .products__slider {
   position: relative;
+  overflow: hidden;
+  transition: .5s;
 
   .bx-wrapper {
     border: 0;
@@ -62,6 +64,7 @@
 }
 
 .products__item {
+  flex-shrink: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -207,9 +210,12 @@ color: #666666;
   transition: .6s;
   position: relative;
   display: flex;
-
 }
+
 
 .products__item {
   flex-shrink: 0;
-}
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
