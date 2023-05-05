@@ -1,6 +1,7 @@
 .products {
   background: #F8FAF9;
   color: #666666;
+
 }
 
 .products__container {
@@ -198,4 +199,17 @@ color: #666666;
 
 .title--product {
   color: #292929;
+}
+
+.products__list {
+  width: 100%;
+  left: 0;
+  transition: .6s;
+  position: relative;
+  display: flex;
+
+}
+
+.products__item {
+  flex-shrink: 0;
 }
