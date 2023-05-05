@@ -1494,6 +1494,22 @@ footer {
   color: #292929;
 }
 
+.products__list {
+  width: 100%;
+  left: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.products__item {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
 @media screen and (max-width: 768px) {
   .dropdown {
     display: none;
