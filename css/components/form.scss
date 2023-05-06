@@ -10,8 +10,6 @@
 
   .form {
     display: flex;
-
-
   
     @include tablets {
       flex-direction: column;
@@ -68,12 +66,12 @@
     &__input {
       width: 100%;
       border: none;
-      padding: rem(15px) rem(12px);
-      border: solid rem(3px) transparent;
-      border-radius: rem(4px);
+      padding: rem(14px) rem(12px);
+      border: solid rem(4px) transparent;
+      border-radius: rem(6px);
   
       @include tablets {
-        padding: rem(5px) rem(2px);
+        padding: rem(4px) rem(2px);
       }
   
       &--textarea {
@@ -81,7 +79,7 @@
         resize: none;
   
         @include tablets {
-          height: rem(73px);
+          height: rem(72px);
         }
       }
   
@@ -100,7 +98,7 @@
       }
   
       &-checkbox {
-        margin-bottom: rem(27px);
+        margin-bottom: rem(26px);
   
         @include phones {
           padding-right: rem(12px);
@@ -117,3 +115,6 @@
     }
   }
   
+  .form__input_error {
+    border-color: red;
+  }

@@ -906,13 +906,13 @@ footer {
 .form__input {
   width: 100%;
   border: none;
-  padding: 0.8333333333rem 0.6666666667rem;
-  border: solid 0.1666666667rem transparent;
-  border-radius: 0.2222222222rem;
+  padding: 0.7777777778rem 0.6666666667rem;
+  border: solid 0.2222222222rem transparent;
+  border-radius: 0.3333333333rem;
 }
 @media screen and (max-width: 768px) {
   .form__input {
-    padding: 0.2777777778rem 0.1111111111rem;
+    padding: 0.2222222222rem 0.1111111111rem;
   }
 }
 .form__input--textarea {
@@ -921,7 +921,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .form__input--textarea {
-    height: 4.0555555556rem;
+    height: 4rem;
   }
 }
 .form__input:focus {
@@ -942,7 +942,7 @@ footer {
   }
 }
 .form__controls-checkbox {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.4444444444rem;
 }
 @media screen and (max-width: 480px) {
   .form__controls-checkbox {
@@ -959,6 +959,10 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.form__input_error {
+  border-color: red;
 }
 
 .radio {
@@ -1242,11 +1246,14 @@ footer {
 }
 
 .products__container {
-  max-width: 52.7222222222rem;
+  max-width: 52.6666666667rem;
 }
 
 .products__slider {
   position: relative;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .products__slider .bx-wrapper {
   border: 0;
@@ -1301,6 +1308,8 @@ footer {
 }
 
 .products__item {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1508,6 +1517,15 @@ footer {
 .products__item {
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 768px) {
