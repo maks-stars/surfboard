@@ -28,6 +28,28 @@
   }
 }
 
+.btn--theme--yellow{
+  &--theme-yellow {
+      background: white;
+      color: #000000;
+      font-weight: 800;
+  }
+
+  @include tablets{
+      font-size: 18px;
+      padding: 20px 40px;
+  }
+
+  @include phones {
+      font-size: 18px;
+      padding: 20px 36px;
+  }
+  &:hover {
+      color: black;
+      background: #e9cb46;
+  }
+}
+
 
 .btn--transparent {
   background: transparent;

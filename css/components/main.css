@@ -441,6 +441,28 @@ footer {
   color: #000;
 }
 
+.btn--theme--yellow--theme-yellow {
+  background: white;
+  color: #000000;
+  font-weight: 800;
+}
+@media screen and (max-width: 768px) {
+  .btn--theme--yellow {
+    font-size: 18px;
+    padding: 20px 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .btn--theme--yellow {
+    font-size: 18px;
+    padding: 20px 36px;
+  }
+}
+.btn--theme--yellow:hover {
+  color: black;
+  background: #e9cb46;
+}
+
 .btn--transparent {
   background: transparent;
   color: #fff;
@@ -959,6 +981,11 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.body_closed {
+  height: 100%;
+  overflow: hidden;
 }
 
 .form__input_error {
@@ -1657,50 +1684,4 @@ footer {
 .dropdown_param {
   text-align: right;
   font-weight: 400;
-}
-
-.modal {
-  display: none;
-}
-
-.input-error {
-  border-color: #ff4c5b;
-}
-
-.success-modal {
-  color: #000;
-}
-
-.error-modal {
-  color: #ff4c5b;
-}
-
-.modal__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: #fff;
-  padding: 2.0555555556rem 3.7777777778rem;
-  text-align: center;
-}
-@media screen and (max-width: 480px) {
-  .modal__container {
-    padding: 1.6666666667rem 1.5555555556rem;
-  }
-}
-
-.modal__content {
-  font-size: 1rem;
-  font-weight: 500;
-  margin-bottom: 2.1111111111rem;
 }

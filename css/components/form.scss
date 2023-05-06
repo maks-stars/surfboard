@@ -115,6 +115,11 @@
     }
   }
   
+  .body_closed {
+    height: 100%;
+    overflow: hidden;
+  }
+  
   .form__input_error {
     border-color: red;
   }
