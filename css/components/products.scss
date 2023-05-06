@@ -5,6 +5,7 @@
 }
 
 .products__container {
+  display: flex;
   max-width: rem(948px);
 }
 
@@ -13,11 +14,16 @@
   overflow: hidden;
   transition: .5s;
 
+  @include tablets{
+    overflow: hidden;
+  }
+
   .bx-wrapper {
     border: 0;
     background: transparent;
     box-shadow: none;
   }
+
 }
 
 .products__arrow {
@@ -27,8 +33,8 @@
   background-size: contain;
   display: block;
   position: absolute;
-  width: rem(13.5px);
-  height: rem(27px);
+  width: rem(14px);
+  height: rem(28px);
   top: 45%;
   transform: translateY(-50%);
   z-index: 10;
@@ -77,7 +83,7 @@
 }
 
 .products__image {
-  padding-top: rem(35px);
+  padding-top: rem(36px);
 
   @include phones {
     margin-bottom: 0;
@@ -87,13 +93,13 @@
 
 .products__img {
   max-width: rem(420px);
-  max-height: rem(539px);
-  margin-left: rem(61px);
-  margin-right: rem(59px);
+  max-height: rem(538px);
+  margin-left: rem(60px);
+  margin-right: rem(58px);
 
   @include tablets {
-    max-width: rem(313px);
-    max-height: rem(421px);
+    max-width: rem(312px);
+    max-height: rem(420px);
     margin: 0;
   }
 
@@ -142,20 +148,20 @@
 
 .products__features {
   display: flex;
-  margin-bottom: rem(25px);
+  margin-bottom: rem(24px);
 
   @include tablets {
-    margin-bottom: rem(21px);
+    margin-bottom: rem(20px);
   }
 
   @include phones {
     justify-content: center;
-    margin-bottom: rem(19px);
+    margin-bottom: rem(18px);
   }
 }
 
 .products__feature {
-  margin-right: rem(53px);
+  margin-right: rem(52px);
 
   &:last-child {
     margin-right: 0;
@@ -188,15 +194,15 @@ color: #666666;
   line-height: rem(60px);
   color: #151515;
   margin-bottom: rem(10px);
-  margin-right: rem(15px);
+  margin-right: rem(16px);
 
   @include tablets {
     margin-right: rem(38px);
   }
 
   @include phones {
-    margin-right: rem(15px);
-    font-size: rem(55px);
+    margin-right: rem(16px);
+    font-size: rem(56px);
   }
 }
 
@@ -210,6 +216,7 @@ color: #666666;
   transition: .6s;
   position: relative;
   display: flex;
+  flex-shrink: 0;
 }
 
 
@@ -218,4 +225,18 @@ color: #666666;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 96%;
+  }
+  @include phones{
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+  }
   }
