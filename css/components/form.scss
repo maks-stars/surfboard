@@ -22,7 +22,7 @@
   
     &__col {
       flex: 1;
-      margin-right: rem(41px);
+      margin-right: rem(40px);
   
       &:last-child {
         margin-right: 0;
@@ -58,7 +58,7 @@
         }
   
         @include phones {
-          margin-bottom: rem(7px);
+          margin-bottom: rem(6px);
         }
       }
     }
@@ -89,6 +89,10 @@
       }
     }
   
+    &__error {
+      border-color: red;
+    }
+
     &__controls {
       display: flex;
       padding-bottom: rem(18px);
@@ -122,4 +126,12 @@
   
   .form__input_error {
     border-color: red;
+  }
+
+  .modal {
+    display: none;
+  }
+  
+  .input-error {
+    border-color: #ff4c5b;
   }
