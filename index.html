@@ -475,7 +475,8 @@
         <div class="container">
           <h2 class="section__title form-title">Закажите доску</h2>
           <div class="order">
-            <form class="form">
+            <form class="form" id="form">
+              <input type="hidden" name="to" value="somewhere@mail.com">
               <div class="form__col">
                 <div class="form__row">
                   <label class="form__block">
@@ -522,12 +523,12 @@
   
                 <div class="form__controls">
                   <label class="radio">
-                    <input type="radio" name="option" class="radio__elem">
+                    <input type="radio" name="pay-option" class="radio__elem">
                     <div class="radio__visible"></div>
                     <div class="radio__title">Оплата наличными</div>
                   </label>
                   <label class="radio radio--2">
-                    <input type="radio" name="option" class="radio__elem">
+                    <input type="radio" name="pay-option" class="radio__elem">
                     <div class="radio__visible"></div>
                     <div class="radio__title">Оплата картой</div>
                   </label>
@@ -632,6 +633,16 @@
     </div>
   </footer>
 
+  <div class="modal" id="modal">
+    <div class="modal__container">
+      <div class="modal__content">Сообщение отправлено</div>
+      <div class="modal__button">
+        <a href="#" class="btn app-submit-btn">Закрыть</a>
+      </div>
+    </div>
+  </div>
+  
   <script src="./script/slider.js"></script>
+  <script src="./script/form.js"></script>
 </body>
 </html>
