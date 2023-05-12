@@ -146,3 +146,20 @@ footer {
 	position: relative;
 	width: 100%;
 }
+
+.title {
+  text-align: center;
+  font-size: rem(48px);
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: $darkGrey;
+
+  &--light {
+    color: #fff;
+  }
+  
+  @include phones {
+    font-size: rem(40px);
+  }
+}
