@@ -2,19 +2,19 @@
     display: none;
   }
   
-  .input-error {
+.input-error {
     border-color: #ff4c5b;
   }
   
-  .success-modal {
+.success-modal {
     color: #000;
   }
   
-  .error-modal {
+.error-modal {
     color: #ff4c5b;
   }
   
-  .modal__container {
+.modal__container {
 
     display: flex;
     flex-direction: column;
@@ -30,7 +30,7 @@
     }
   }
   
-  .modal__content {
+.modal__content {
     font-size: rem(18px);
     font-weight: 500;
     margin-bottom: rem(38px);
