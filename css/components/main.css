@@ -2123,6 +2123,119 @@ footer {
   margin-bottom: 2.1111111111rem;
 }
 
+.menu-acco {
+  position: relative;
+  background: url("../../img/slidebar/slider-menu.png") center center/cover no-repeat;
+}
+
+.menu-acco__title {
+  color: #fff;
+  font-size: 2.6666666667rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-left: 4.6666666667rem;
+  padding-bottom: 26.9444444444rem;
+}
+@media screen and (max-width: 768px) {
+  .menu-acco__title {
+    padding-bottom: 42.5rem;
+    padding-left: 2.2222222222rem;
+    padding-top: 4.6666666667rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu-acco__title {
+    font-size: 2.3333333333rem;
+    padding-bottom: 27.5rem;
+    padding-left: 0.3333333333rem;
+    padding-top: 4.3333333333rem;
+  }
+}
+
+.menu-acco__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.menu-acco__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-acco__button {
+  color: inherit;
+  width: 5.6666666667rem;
+  background: center center/cover no-repeat;
+  position: relative;
+}
+@media screen and (max-width: 480px) {
+  .menu-acco__button {
+    width: 5rem;
+  }
+}
+
+.menu-acco__button-text {
+  position: absolute;
+  -webkit-transform: rotate(-90deg) translateY(-50%);
+          transform: rotate(-90deg) translateY(-50%);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  left: 50%;
+  bottom: 2.1666666667rem;
+  white-space: nowrap;
+  font-size: 2.6666666667rem;
+  font-weight: 700;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .menu-acco__button-text {
+    bottom: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu-acco__button-text {
+    font-size: 2.3333333333rem;
+  }
+}
+
+.menu-acco__content {
+  background: rgba(51, 53, 55, 0.9);
+  width: 0;
+  overflow: hidden;
+  -webkit-transition: width 0.3s linear;
+  transition: width 0.3s linear;
+}
+
+.menu-acco__desc {
+  color: #fff;
+  font-size: 0.8888888889rem;
+  font-weight: 400;
+  line-height: 1.3333333333rem;
+  padding-top: 1.7222222222rem;
+  padding-left: 2.1111111111rem;
+  padding-right: 2.3888888889rem;
+}
+@media screen and (max-width: 768px) {
+  .menu-acco__desc {
+    padding-top: 2.3888888889rem;
+    padding-left: 1.8888888889rem;
+    padding-right: 6.6666666667rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu-acco__desc {
+    padding-top: 2.3888888889rem;
+    padding-left: 0.8333333333rem;
+    padding-right: 0.8333333333rem;
+  }
+}
+
 body.compensate-for-scrollbar {
   overflow: hidden;
 }
