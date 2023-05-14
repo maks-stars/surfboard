@@ -2236,6 +2236,16 @@ footer {
   }
 }
 
+.map {
+  position: relative;
+}
+
+.map__ya {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
 body.compensate-for-scrollbar {
   overflow: hidden;
 }
