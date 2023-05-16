@@ -8,7 +8,7 @@
   <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/components/main.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
 </head>
 
 <body>
@@ -136,7 +136,7 @@
             <li class="benefits__item benefit">
               <div class="benefit__imag">
                 <div class="benefit__image-wrapper">
-                  <img src="./img/icons/human-icon.svg" alt="perfect human icon" class="benefit__icon">
+                  <img src="./img/icons/surf-icon.svg" alt="perfect human icon" class="benefit__icon">
                 </div>
               </div>
               <div class="benefit__text">
@@ -771,6 +771,47 @@
         </div>
       </section>
 
+      <section data-sidemenu-theme="black" data-section-id="video" class="section video">
+        <div class="container video__container">
+          <h2 class="title title--video">Как мы работаем</h2>
+          <div class="video__wrapper">
+
+            <div class="video__player">
+              <video src="./video/videoplayback.mp4" id="player" poster="./img/decor/video-bg.png">
+                <source src="./video/videoplayback.mp4" type="video/mp4">
+              </video>
+
+              <button class="video__player-img">
+                <img src="./img/icons/play.svg" alt="play icon" class="play video__btn-img">
+              </button>
+            </div>
+
+            <div class="video__toolbar">
+              <div class="duration">
+                <div class="duration__btn-wrap">
+                  <button class="play duration__img"></button>
+                </div>
+
+                <div class="duration__length-wrap">
+                  <input type="range" class="duration__length" id="durationLevel">
+                </div>
+              </div>
+
+              <div class="sound" id="soundBtn">
+                <button class="sound__btn">
+                  <img src="./img/icons/volume.svg" alt="volume icon" class="sound__mic" id="dynamic">
+                </button>
+
+                <div class="sound__volume">
+                  <input type="range" class="duration__length duration__length--other" id="micLevel">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section section-form">
         <div class="container">
           <h2 class="section__title form-title">Закажите доску</h2>
@@ -983,7 +1024,12 @@ type="text/javascript"></script>
   <script src="./script/burger-menu.js"></script>
   <script src="./script/reviews.js"></script>
   <script src="./script/team.js"></script>
+  <script src="./script/video.js"></script>
   <script src="./script/horizontal-acco.js"></script>
-  
+
+  <audio controls="controls" autoplay="autoplay" class="music">
+    <source src="./video/music.mp3">
+  </audio>
+
 </body>
 </html>
