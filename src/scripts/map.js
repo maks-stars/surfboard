@@ -1,13 +1,13 @@
 let myMap;
 const init = () => {
  myMap = new ymaps.Map("map", {
-  center: [55.752004, 37.576133],
+  center: [55.748452, 37.629044],
    zoom: 16,
    controls: [],
  });
  
  let coords = [
-     [55.752004, 37.576133],
+     [55.748452, 37.629044],
    ],
    myCollection = new ymaps.GeoObjectCollection({}, {
      draggable: false,
