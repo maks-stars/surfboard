@@ -1,0 +1,79 @@
+.title {
+  text-align: center;
+  font-size: rem(48px);
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: $darkGrey;
+
+  &--light {
+    color: #fff;
+  }
+  
+  @include phones {
+    font-size: rem(40px);
+  }
+}
+
+.title--why {
+  margin-bottom: rem(20px);
+
+  @include phones {
+    margin-bottom: 0;
+  }
+}
+
+.title--review {
+  margin-bottom: rem(32px);
+
+  @include phones {
+    margin-bottom: rem(20px);
+  }
+}
+
+.title--order {
+  margin-bottom: rem(59px);
+
+  @include tablets {
+    margin-bottom: rem(31px);
+  }
+
+  @include phones {
+    margin-bottom: rem(28px);
+    white-space: nowrap;
+  }
+}
+
+.title--product {
+  font-size: rem(36px);
+  text-align: left;
+  margin-bottom: rem(25px);
+
+  @include tablets {
+    margin-bottom: rem(16px);
+  }
+
+  @include tablets {
+    font-size: rem(30px);
+  }
+}
+
+.title--team {
+  margin-bottom: rem(54px);
+
+  @include tablets {
+    margin-bottom: rem(32px);
+  }
+}
+
+.title--video {
+  margin-bottom: rem(31px);
+
+  @include tablets {
+    margin-bottom: rem(40px);
+  }
+
+  @include phones {
+    margin-bottom: rem(33px);
+  }
+}

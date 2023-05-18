@@ -1,0 +1,89 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  background: url("../src/img/bg-hero.png") center center / cover no-repeat;
+  // background: url('./img/bg-hero.png') center center / cover no-repeat;
+  color: #fff;
+  padding-bottom: rem(45px);
+  height: 100%;
+  
+  @include tablets {
+    justify-content: center;
+    background-position: right 0;
+    padding-top: 0;
+  }
+
+  @include phones {
+    background: url("../src/img/bg-hero-phone.png") center center / cover no-repeat;
+    // background: url('./img/bg-hero-phone.png') center center / cover no-repeat;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include tablets {
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+    }
+  }
+
+  &__main-title {
+    font-size: rem(48px);
+    line-height: rem(58px);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: rem(21px);
+
+    @include tablets {
+      padding: 0 4%;
+      margin-bottom: rem(11px);
+    }
+
+    @include phones {
+      padding: 0 5%;
+      font-size: calc(1rem + 4vw);
+      line-height: 0.9;
+      margin-bottom: rem(14px);
+    }
+}
+
+  &__title-desc {
+    font-size: rem(21px);
+    margin-bottom: rem(57px);
+    padding-right: 5%;
+
+    @include tablets {
+      padding: 0 2%;
+      margin-bottom: rem(40px);
+    }
+
+    @include phones {
+      padding: 0 5%;
+      font-size: rem(18px);
+      margin-bottom: rem(40px);
+    }
+  }
+
+  &__title {
+    width: 46%;
+
+    @include tablets {
+      width: 100%;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__icons {
+    @include tablets {
+      display: none;
+    }
+  }
+}

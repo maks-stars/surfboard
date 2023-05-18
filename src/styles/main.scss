@@ -1,0 +1,58 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+//colors
+$yellow: #FFD517;
+$liteYellow: #FEDB3F;
+$darkGrey: #292929;
+$grey: #F2F5F4;
+
+//z-indexes
+$z-fixed-menu: 100;
+
+//normalize
+// @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css";
+
+//setups
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800&display=swap');
+@import "_media.scss";
+@import "_layout.scss";
+
+//blocks
+@import "./blocks/*.scss";
+
+// @import "./blocks/_section.scss";
+// @import "./blocks/_header.scss";
+// @import "./blocks/_hero.scss";
+// @import "./blocks/_logo.scss";
+// @import "./blocks/_menu.scss";
+// @import "./blocks/_phone-number.scss";
+// @import "./blocks/_features.scss";
+// @import "./blocks/_feature.scss";
+// @import "./blocks/_btn.scss";
+// @import "./blocks/_benefits-block.scss";
+// @import "./blocks/_title.scss";
+// @import "./blocks/_benefits.scss";
+// @import "./blocks/_benefit.scss";
+// @import "./blocks/_products.scss";
+// @import "./blocks/_team.scss";
+// @import "./blocks/_dropdown.scss";
+// @import "./blocks/_menu-acco.scss";
+// @import "./blocks/_review.scss";
+// @import "./blocks/_video.scss";
+// @import "./blocks/_interactive-avatar.scss";
+// @import "./blocks/_order.scss";
+// @import "./blocks/_form.scss";
+// @import "./blocks/_radio.scss";
+// @import "./blocks/_map.scss";
+// @import "./blocks/_footer.scss";
+// @import "./blocks/_contacts.scss";
+// @import "./blocks/_social.scss";
+// @import "./blocks/_fixed-menu.scss";
+// @import "./blocks/_hamburger.scss";
+// @import "./blocks/_burger-menu.scss";
+// @import "./blocks/_modal.scss";

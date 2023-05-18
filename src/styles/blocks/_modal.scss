@@ -1,0 +1,35 @@
+.modal {
+  display: none;
+}
+
+.input-error {
+  border-color: #ff4c5b;
+}
+
+.success-modal {
+  color: #000;
+}
+
+.error-modal {
+  color: #ff4c5b;
+}
+
+.modal__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: rem(37px) rem(68px);
+  text-align: center;
+
+  @include phones {
+    padding: rem(30px) rem(28px);
+  }
+}
+
+.modal__content {
+  font-size: rem(18px);
+  font-weight: 500;
+  margin-bottom: rem(38px);
+}

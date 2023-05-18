@@ -1,0 +1,41 @@
+.btn {
+  font-size: rem(16px);
+  font-weight: 800;
+  padding: rem(21px) rem(41px);
+  text-transform: uppercase;
+  border-radius: rem(100px);
+  line-height: rem(18px);
+  background: $liteYellow;
+  color: #000;
+  border: none;
+
+  @include hover {
+    background: $yellow;
+    color: #000;
+  }
+
+  @include phones {
+    font-size: rem(16px);
+    font-weight: 800;
+    padding: rem(21px) rem(40px);
+  }
+}
+
+.btn--phone {
+  @include phones {
+    font-size: rem(19px);
+    font-weight: 800;
+    padding: rem(20px) rem(36px);
+  }
+}
+
+  .btn--transparent {
+    background: transparent;
+    color: #fff;
+    text-transform: none;
+
+    @include hover {
+      background: transparent;
+      color: #000;
+    }
+  }

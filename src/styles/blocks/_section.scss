@@ -1,0 +1,13 @@
+.section {
+  // height: 100vh;
+  // min-height: rem(652px);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+
+  @include tablets {
+    height: 100%;
+  }
+}
