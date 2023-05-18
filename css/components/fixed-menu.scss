@@ -3,6 +3,15 @@
   top: 20%;
   right: 3%;
   z-index: $z-fixed-menu;
+  color: #fff;
+
+  @include tablets {
+    display: none;
+  }
+
+  @include phones {
+    display: none;
+  }
 }
 
 .fixed-menu__item {
@@ -26,6 +35,10 @@
   display: block;
   position: relative;
 
+  &:hover {
+    border: rem(1px) solid;
+  }
+
   &:before {
     content: "";
     display: block;
@@ -39,3 +52,14 @@
     transform: translate(-50%, -50%);
   }
 }
+
+
+.fixed-menu--shadowed {
+  color: #666666;
+}
+
+.fixed-menu__link--shadowed {
+    &:before {
+      background: #666666;
+    }
+  }

@@ -1099,6 +1099,17 @@ footer {
   top: 20%;
   right: 3%;
   z-index: 100;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .fixed-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .fixed-menu {
+    display: none;
+  }
 }
 
 .fixed-menu__item {
@@ -1121,6 +1132,9 @@ footer {
   display: block;
   position: relative;
 }
+.fixed-menu__link:hover {
+  border: 0.0555555556rem solid;
+}
 .fixed-menu__link:before {
   content: "";
   display: block;
@@ -1133,6 +1147,14 @@ footer {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.fixed-menu--shadowed {
+  color: #666666;
+}
+
+.fixed-menu__link--shadowed:before {
+  background: #666666;
 }
 
 .hamburger {
