@@ -1,3 +1,4 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800&display=swap");
 html {
   font-size: 18px;
@@ -25,6 +26,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
+  overflow: hidden;
   color: #666666;
 }
 
@@ -110,8 +112,17 @@ img {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
+}
+
+.maincontent {
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  will-change: transform;
 }
 
 .container {
@@ -159,7 +170,11 @@ img {
 
 footer {
   position: relative;
-  width: 100%;
+  width: 95%;
+  max-width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .title {
@@ -2529,11 +2544,6 @@ footer {
   width: 100%;
   height: 100%;
   position: absolute;
-}
-
-.music {
-  position: relative;
-  display: none;
 }
 
 body.compensate-for-scrollbar {
