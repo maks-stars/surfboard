@@ -170,8 +170,8 @@ img {
 
 footer {
   position: relative;
-  width: 95%;
-  max-width: 95%;
+  width: 100%;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1131,17 +1131,12 @@ footer {
   margin-bottom: 0.3333333333rem;
 }
 .fixed-menu__item--active .fixed-menu__link {
-  border-color: #fff;
-}
-@media screen and (max-width: 768px) {
-  .fixed-menu__item {
-    display: none;
-  }
+  border: 0.0555555556rem solid;
 }
 
 .fixed-menu__link {
-  width: 1rem;
-  height: 1rem;
+  width: 0.8888888889rem;
+  height: 0.8888888889rem;
   border-radius: 50%;
   border: 0.0555555556rem solid transparent;
   display: block;
@@ -1153,8 +1148,8 @@ footer {
 .fixed-menu__link:before {
   content: "";
   display: block;
-  width: 0.4444444444rem;
-  height: 0.4444444444rem;
+  width: 0.3333333333rem;
+  height: 0.3333333333rem;
   border-radius: 50%;
   background: #fff;
   position: absolute;

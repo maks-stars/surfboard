@@ -16,50 +16,46 @@
 
 .fixed-menu__item {
   margin-bottom: rem(6px);
-
-  &--active {
-    .fixed-menu__link {
-      border-color: #fff;
+  
+    &--active {
+      .fixed-menu__link {
+        border: rem(1px) solid;
     }
-  }
-  @include tablets {
-    display: none;
   }
 }
 
 .fixed-menu__link {
-  width: rem(18px);
-  height: rem(18px);
+  width: rem(16px);
+  height: rem(16px);
   border-radius: 50%;
   border: rem(1px) solid transparent;
   display: block;
   position: relative;
 
-  &:hover {
-    border: rem(1px) solid;
-  }
-
-  &:before {
-    content: "";
-    display: block;
-    width: rem(8px);
-    height: rem(8px);
-    border-radius: 50%;
-    background: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-
-.fixed-menu--shadowed {
-  color: #666666;
-}
-
-.fixed-menu__link--shadowed {
+    &:hover {
+      border: rem(1px) solid;
+    }
+  
     &:before {
-      background: #666666;
+      content: "";
+      display: block;
+      width: rem(6px);
+      height: rem(6px);
+      border-radius: 50%;
+      background: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
+
+  .fixed-menu--shadowed {
+    color: #666666;
+  }
+
+  .fixed-menu__link--shadowed {
+      &:before {
+        background: #666666;
+      }
+    }
