@@ -29,7 +29,7 @@ task('copy:html', () => {
 
 const styles = [
   "node_modules/normalize.css/normalize.css",
-  "src/styles/main.scss"
+  "src/css/components/main.scss"
 ]
 
 task('styles', () => {
@@ -51,7 +51,7 @@ task('styles', () => {
 
  const libs = [
   // 'node_modules/jquery/dist/jquery.js',
-  'src/scripts/*.js'
+  'src/script/*.js'
  ];
 
  task('scripts', () => {
@@ -95,9 +95,9 @@ task('styles', () => {
 });
 
 task('watch', () => {
-  watch('./src/styles/**/*.scss', series('styles'));
+  watch('./src/css/**/*.scss', series('styles'));
   watch('./src/*.html', series('copy:html'));
-  watch('./src/scripts/*.js', series('scripts'));
+  watch('./src/script/*.js', series('scripts'));
   watch('./src/img/icons/*.svg', series('icons'));
  });
   
